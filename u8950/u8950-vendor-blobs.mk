@@ -17,6 +17,9 @@
 LOCAL_PATH := vendor/huawei/u8950/proprietary
 
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/app/Camera2/lib/armeabi-v7/libjni_jpegutil.so:system/app/Camera2/lib/armeabi-v7/libjni_jpegutil.so \
+	$(LOCAL_PATH)/app/Camera2/lib/armeabi-v7/libjni_mosaic.so:system/app/Camera2/lib/armeabi-v7/libjni_mosaic.so \
+	$(LOCAL_PATH)/app/Camera2/lib/armeabi-v7/libjni_tinyplanet.so:system/app/Camera2/lib/armeabi-v7/libjni_tinyplanet.so \
 	$(LOCAL_PATH)/lib/libcm.so:system/lib/libcm.so \
 	$(LOCAL_PATH)/etc/bluetooth/BCM4330.hcd:system/etc/bluetooth/BCM4330.hcd \
 	$(LOCAL_PATH)/etc/fw_4330_b2.bin:system/etc/fw_4330_b2.bin \
