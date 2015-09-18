@@ -19,9 +19,6 @@ LOCAL_PATH := vendor/huawei/u8950/proprietary
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libcm.so:system/lib/libcm.so \
 	$(LOCAL_PATH)/etc/bluetooth/BCM4330.hcd:system/etc/bluetooth/BCM4330.hcd \
-	$(LOCAL_PATH)/etc/fw_4330_b2.bin:system/etc/fw_4330_b2.bin \
-	$(LOCAL_PATH)/etc/fw_4330_b2_p2p_ap.bin:system/etc/fw_4330_b2_p2p_ap.bin \
-	$(LOCAL_PATH)/etc/fw_4330_b2_test.bin:system/etc/fw_4330_b2_test.bin \
 	$(LOCAL_PATH)/bin/modempre:system/bin/modempre \
 	$(LOCAL_PATH)/bin/mpdecision:system/bin/mpdecision \
 	$(LOCAL_PATH)/bin/netmgrd:system/bin/netmgrd \
