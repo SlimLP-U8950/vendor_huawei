@@ -17,7 +17,7 @@
 LOCAL_PATH := vendor/huawei/u8950/proprietary
 
 # Old bcmdhd binary
-#PRODUCT_COPY_FILES += $(LOCAL_PATH)/etc/fw_4330_b2.bin:system/etc/fw_4330_b2.bin
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/etc/fw_4330_b2.bin:system/etc/fw_4330_b2.bin
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libcm.so:system/lib/libcm.so \
