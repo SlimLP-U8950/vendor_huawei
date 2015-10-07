@@ -78,4 +78,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/etc/fw_4330_b2.bin:system/etc/fw_4330_b2.bin \
 	$(LOCAL_PATH)/etc/fw_4330_b2_p2p_ap.bin:system/etc/fw_4330_b2_p2p_ap.bin \
 	$(LOCAL_PATH)/etc/fw_4330_b2_test.bin:system/etc/fw_4330_b2_test.bin
+else
+PRODUCT_COPY_FILES += \
+	hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/fw_bcm4330_apsta_bg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin
 endif
