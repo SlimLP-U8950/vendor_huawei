@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/bin/thermald:system/bin/thermald \
 	$(LOCAL_PATH)/bin/wlan_detect:system/bin/wlan_detect \
+	$(LOCAL_PATH)/lib/libwmsts.so:system/lib/libwmsts.so \
 	$(LOCAL_PATH)/lib/libadc.so:system/lib/libadc.so \
 	$(LOCAL_PATH)/lib/libauth.so:system/lib/libauth.so \
 	$(LOCAL_PATH)/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
@@ -62,7 +63,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libril.so:system/lib/libril.so \
 	$(LOCAL_PATH)/lib/libuim.so:system/lib/libuim.so \
 	$(LOCAL_PATH)/lib/libwms.so:system/lib/libwms.so \
-	$(LOCAL_PATH)/lib/libwmsts.so:system/lib/libwmsts.so \
+	$(LOCAL_PATH)/lib/hw/lights.msm7x27a.so:system/lib/hw/lights.msm7x27a.so \
 	$(LOCAL_PATH)/nv/MSM8X25_C8950D/nv_ext.bin:system/nv/MSM8X25_C8950D/nv_ext.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_C8950D/nv_ext_FTY.bin:system/nv/MSM8X25_C8950D/nv_ext_FTY.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_C8950/nv_ext.bin:system/nv/MSM8X25_C8950/nv_ext.bin \
@@ -71,14 +72,4 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/nv/MSM8X25_U8950-51/nv_ext_FTY.bin:system/nv/MSM8X25_U8950-51/nv_ext_FTY.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_U8950-1/nv_ext.bin:system/nv/MSM8X25_U8950-1/nv_ext.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_U8950-1/nv_ext_FTY.bin:system/nv/MSM8X25_U8950-1/nv_ext_FTY.bin \
-	$(LOCAL_PATH)/lib/hw/lights.msm7x27a.so:system/lib/hw/lights.msm7x27a.so
-
-ifeq ($(USE_OLD_BCMDHD),true)
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/etc/fw_4330_b2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin \
-	$(LOCAL_PATH)/etc/fw_4330_b2_p2p_ap.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_b2_p2p_ap.bin \
-	$(LOCAL_PATH)/etc/fw_4330_b2_test.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_b2_test.bin
-else
-PRODUCT_COPY_FILES += \
-	hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/fw_bcm4330_apsta_bg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin
-endif
+	$(LOCAL_PATH)/vendor/fw_bcm4330_apsta_bg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin
