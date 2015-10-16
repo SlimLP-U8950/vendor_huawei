@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/bin/thermald:system/bin/thermald \
 	$(LOCAL_PATH)/bin/wlan_detect:system/bin/wlan_detect \
-	$(LOCAL_PATH)/lib/libwmsts.so:system/lib/libwmsts.so \
+	$(LOCAL_PATH)/lib/hw/lights.msm7x27a.so:system/lib/hw/lights.msm7x27a.so \
 	$(LOCAL_PATH)/lib/libadc.so:system/lib/libadc.so \
 	$(LOCAL_PATH)/lib/libauth.so:system/lib/libauth.so \
 	$(LOCAL_PATH)/lib/libcneapiclient.so:system/lib/libcneapiclient.so \
@@ -63,7 +63,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libril.so:system/lib/libril.so \
 	$(LOCAL_PATH)/lib/libuim.so:system/lib/libuim.so \
 	$(LOCAL_PATH)/lib/libwms.so:system/lib/libwms.so \
-	$(LOCAL_PATH)/lib/hw/lights.msm7x27a.so:system/lib/hw/lights.msm7x27a.so \
+	$(LOCAL_PATH)/lib/libwmsts.so:system/lib/libwmsts.so \
 	$(LOCAL_PATH)/nv/MSM8X25_C8950D/nv_ext.bin:system/nv/MSM8X25_C8950D/nv_ext.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_C8950D/nv_ext_FTY.bin:system/nv/MSM8X25_C8950D/nv_ext_FTY.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_C8950/nv_ext.bin:system/nv/MSM8X25_C8950/nv_ext.bin \
