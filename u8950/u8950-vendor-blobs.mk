@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/oem_rpc_svc:system/bin/oem_rpc_svc \
 	$(LOCAL_PATH)/bin/qmiproxy:system/bin/qmiproxy \
 	$(LOCAL_PATH)/bin/qmuxd:system/bin/qmuxd \
-	$(LOCAL_PATH)/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/bin/thermald:system/bin/thermald \
 	$(LOCAL_PATH)/bin/wlan_detect:system/bin/wlan_detect \
 	$(LOCAL_PATH)/lib/hw/lights.msm7x27a.so:system/lib/hw/lights.msm7x27a.so \
@@ -60,7 +59,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libril-qc-1.so:system/lib/libril-qc-1.so \
 	$(LOCAL_PATH)/lib/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so \
 	$(LOCAL_PATH)/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so \
-	$(LOCAL_PATH)/lib/libril.so:system/lib/libril.so \
 	$(LOCAL_PATH)/lib/libuim.so:system/lib/libuim.so \
 	$(LOCAL_PATH)/lib/libwms.so:system/lib/libwms.so \
 	$(LOCAL_PATH)/lib/libwmsts.so:system/lib/libwmsts.so \
@@ -73,3 +71,10 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/nv/MSM8X25_U8950-1/nv_ext.bin:system/nv/MSM8X25_U8950-1/nv_ext.bin \
 	$(LOCAL_PATH)/nv/MSM8X25_U8950-1/nv_ext_FTY.bin:system/nv/MSM8X25_U8950-1/nv_ext_FTY.bin \
 	$(LOCAL_PATH)/vendor/fw_bcm4330_apsta_bg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin
+
+# RIL for Marshmallow
+ifneq ($(PLATFORM_VERSION),6.0)
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/bin/rild:system/bin/rild \
+	$(LOCAL_PATH)/lib/libril.so:system/lib/libril.so
+endif
