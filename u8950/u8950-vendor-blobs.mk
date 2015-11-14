@@ -77,7 +77,4 @@ ifneq ($(PLATFORM_VERSION),6.0)
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/lib/libril.so:system/lib/libril.so
-else
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/lib/libwilhelm.so:system/lib/libwilhelm.so
 endif
